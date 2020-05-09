@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		BB9460292466C43800707295 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9460282466C43800707295 /* AppDelegate.swift */; };
 		BB94602B2466C43800707295 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB94602A2466C43800707295 /* SceneDelegate.swift */; };
-		BB94602D2466C43800707295 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB94602C2466C43800707295 /* ViewController.swift */; };
 		BB9460302466C43800707295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB94602E2466C43800707295 /* Main.storyboard */; };
 		BB9460322466C43A00707295 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9460312466C43A00707295 /* Assets.xcassets */; };
 		BB9460352466C43A00707295 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9460332466C43A00707295 /* LaunchScreen.storyboard */; };
+		BB94603E2466C57900707295 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB94603D2466C57900707295 /* MainTabBarController.swift */; };
+		BB9460442466C6E700707295 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9460432466C6E700707295 /* FirstViewController.swift */; };
+		BB9460462466C6F000707295 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9460452466C6F000707295 /* SecondViewController.swift */; };
+		BB9460482466C6F800707295 /* ThriedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9460472466C6F800707295 /* ThriedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BB9460252466C43800707295 /* 1tabBar3knopki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1tabBar3knopki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9460282466C43800707295 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB94602A2466C43800707295 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BB94602C2466C43800707295 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BB94602F2466C43800707295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB9460312466C43A00707295 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB9460342466C43A00707295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB9460362466C43A00707295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB94603D2466C57900707295 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		BB9460432466C6E700707295 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		BB9460452466C6F000707295 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		BB9460472466C6F800707295 /* ThriedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThriedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		BB9460272466C43800707295 /* 1tabBar3knopki */ = {
 			isa = PBXGroup;
 			children = (
+				BB94603D2466C57900707295 /* MainTabBarController.swift */,
+				BB9460432466C6E700707295 /* FirstViewController.swift */,
+				BB9460452466C6F000707295 /* SecondViewController.swift */,
+				BB9460472466C6F800707295 /* ThriedViewController.swift */,
+				BB94602E2466C43800707295 /* Main.storyboard */,
+				BB94603C2466C44700707295 /* support */,
+			);
+			path = 1tabBar3knopki;
+			sourceTree = "<group>";
+		};
+		BB94603C2466C44700707295 /* support */ = {
+			isa = PBXGroup;
+			children = (
 				BB9460282466C43800707295 /* AppDelegate.swift */,
 				BB94602A2466C43800707295 /* SceneDelegate.swift */,
-				BB94602C2466C43800707295 /* ViewController.swift */,
-				BB94602E2466C43800707295 /* Main.storyboard */,
 				BB9460312466C43A00707295 /* Assets.xcassets */,
 				BB9460332466C43A00707295 /* LaunchScreen.storyboard */,
 				BB9460362466C43A00707295 /* Info.plist */,
 			);
-			path = 1tabBar3knopki;
+			name = support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB94602D2466C43800707295 /* ViewController.swift in Sources */,
+				BB9460482466C6F800707295 /* ThriedViewController.swift in Sources */,
+				BB9460462466C6F000707295 /* SecondViewController.swift in Sources */,
+				BB9460442466C6E700707295 /* FirstViewController.swift in Sources */,
 				BB9460292466C43800707295 /* AppDelegate.swift in Sources */,
+				BB94603E2466C57900707295 /* MainTabBarController.swift in Sources */,
 				BB94602B2466C43800707295 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
